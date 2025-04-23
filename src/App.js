@@ -138,7 +138,7 @@ function App() {
           <div>
             <div className="flex p-2  border-gray-500 h-3/5">
               <div className="w-4/12 flex flex-col items-start justify-between">
-                <h1 className="font-semibold ">GSTIN: 32BSGPJ3340H1Z4</h1>
+                {/* <h1 className="font-semibold ">GSTIN: 32BSGPJ3340H1Z4</h1> */}
                 <div className="space-y-3">
                   <h1 className="font-semibold  ">STATE : KERALA</h1>
                   <h1 contenteditable="true" className=" font-semibold">
@@ -162,9 +162,9 @@ function App() {
                   <BsInstagram className="text-pink-600 text-2xl" />
                   <span>Mobile House</span>
                 </h1>
-                <h1 className="font-semibold ">
+                {/* <h1 className="font-semibold ">
                   GST TAX INVOICE (TYPE - B2C) - CASH SALE
-                </h1>
+                </h1> */}
               </div>
               <div className="w-4/12 flex flex-col items-end justify-end space-y-2">
                 <h1 className="font-semibold">STATE CODE : 32</h1>
@@ -193,12 +193,12 @@ function App() {
                   <th className="border border-gray-500">
                     Name of Item/Commodity
                   </th>
-                  <th className="border border-gray-500">HSNCode</th>
+                  {/* <th className="border border-gray-500">HSNCode</th> */}
                   <th className="border border-gray-500">Qty</th>
-                  <th className="border border-gray-500">Total Rate</th>
+                  {/* <th className="border border-gray-500">Total Rate</th>
                   <th className="border border-gray-500">Total Disc</th>
                   <th className="border border-gray-500">GST%</th>
-                  <th className="border border-gray-500">GST Amt</th>
+                  <th className="border border-gray-500">GST Amt</th> */}
                   <th>Total Amount</th>
                 </tr>
                 <tr className="w-full ">
@@ -214,19 +214,19 @@ function App() {
                       <h1 contenteditable="true">IMEI2:{BillValues.IMEI2}</h1>
                     )}
                   </td>
-                  <td className="text-center border  border-gray-500"></td>
+                  {/* <td className="text-center border  border-gray-500"></td> */}
                   <td className="text-center border  border-gray-500">1</td>
-                  <td className="text-center border  border-gray-500">
+                  {/* <td className="text-center border  border-gray-500">
                     {(BillValues.Total / +(1 + 18 / 100)).toFixed(2)}
                   </td>
                   <td className="text-center border  border-gray-500">0.00</td>
-                  <td className="text-center border  border-gray-500">18</td>
-                  <td className="text-center border  border-gray-500">
+                  <td className="text-center border  border-gray-500">18</td> */}
+                  {/* <td className="text-center border  border-gray-500">
                     {(
                       ((+BillValues.Total / +(1 + 18 / 100)) * 18) /
                       100
                     ).toFixed(2)}
-                  </td>
+                  </td> */}
                   <td className="text-center border border-gray-500">
                     {BillValues.Total}.00
                   </td>
@@ -243,19 +243,19 @@ function App() {
             <div className="flex justify-between border border-gray-500 p-2 font-bold">
               <h1 className="">Total</h1>
               <h1>1</h1>
-              <h1>{(BillValues.Total / +(1 + 18 / 100)).toFixed(2)}</h1>
+              {/* <h1>{(BillValues.Total / +(1 + 18 / 100)).toFixed(2)}</h1>
               <h1>
                 {(((+BillValues.Total / +(1 + 18 / 100)) * 18) / 100).toFixed(
                   2
                 )}
-              </h1>
+              </h1> */}
               <h1>{BillValues.Total}.00</h1>
             </div>
             <div className="flex p-2">
               <div className="w-7/12">
                 <h1>In Words: {converter.toWords(BillValues.Total)} only</h1>
                 <div className=" mt-5">
-                  <table className="w-full border-collapse border border-gray-300">
+                  {/* <table className="w-full border-collapse border border-gray-300">
                     <tr>
                       <th className="border border-gray-300 py-2"></th>
                       <th className="border border-gray-300 py-2">GST 0%</th>
@@ -307,7 +307,7 @@ function App() {
                       </td>
                       <td className="border border-gray-300">0.00</td>
                     </tr>
-                  </table>
+                  </table> */}
                 </div>
               </div>
               <div className="w-5/12 flex flex-col items-end space-y-2">
